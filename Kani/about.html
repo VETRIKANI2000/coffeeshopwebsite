@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="aboutstyle" href="astyle.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+.heading p {
+    font-size: 18px;
+    color: black;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 20px; 
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.2);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+span {
+    color: blue;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+
+@media screen and (max-width: 1200px) {
+    .heading {
+        padding: 0px 10px; 
+    }
+
+    .heading h1 {
+        font-size: 36px;
+    }
+
+    .heading p {
+        font-size: 17px;
+        margin-bottom: 10px; 
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    .about {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-right: 0;
+        width: 100%; 
+        height: auto; 
+    }
+
+    .about-content p {
+        padding: 0;
+        font-size: 16px;
+    }
+}
+
+</style>
+<body>
+    <div class="heading">
+        <h1>About US</h1>
+        <p>Coffee is a beloved beverage enjoy by millions worldwide for its bold flavour,rich aroma and comforting warmth</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1610632380989-680fe40816c6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fHw%3D">
+
+            </div>
+            <div class="about-content">
+                <h2>Warm embrace in a cup of coffee</h2>
+                <p>
+                    Welcome to <span>It's Our Coffee Shop</span> where passion meets perfection in every cup. Established with an unwavering love for the art of coffee, we embark on a journey to elevate your coffee experience to unparalleled heights. Our story begins with a shared enthusiasm for sourcing the finest beans from across the globe, ensuring that each sip encapsulates the essence of quality and craftsmanship.
+
+At  <span>It's Our Coffee Shop</span>we believe in more than just brewing a cup; we strive to create moments of indulgence and connection. Our commitment to excellence extends beyond the roasting process, as we meticulously select beans that embody the rich diversity of flavors and aromas inherent in the world's most renowned coffee regions. From the misty highlands of Ethiopia to the lush plantations of Colombia, our dedication to authenticity is reflected in every batch we roast.
+                </p>
+            </div>
+        </section>
+    </div>
+    <h1></h1>
+</div>
+
+</body>
+</html>
